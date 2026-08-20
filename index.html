@@ -27,9 +27,9 @@
     <link rel="icon" href="assets/icons/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&family=Literata:opsz,wght@7..72,600;7..72,700;7..72,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[#f7f1e8] text-slate-950">
     <div class="topbar px-4 py-2 text-sm">
@@ -83,65 +83,20 @@
           <div class="hero-media" aria-label="Galería destacada de la gestión municipal">
             <img class="management-logo" src="assets/logos/logointendente.png" alt="Municipalidad de Santa Victoria Este - Intendencia Rogelio Nerón" />
             <div class="hero-carousel" data-carousel>
-              <figure class="carousel-slide is-active">
-                <img src="assets/img/gestion-01.jpeg" alt="Maquinaria municipal trabajando sobre un camino de tierra junto a vecinos." />
+              <figure class="carousel-stage">
+                <img
+                  data-carousel-image
+                  src="assets/img/gestion-01.jpeg"
+                  alt="Maquinaria municipal trabajando sobre un camino de tierra junto a vecinos."
+                />
                 <figcaption>
-                  <strong>Trabajo en caminos rurales</strong>
-                  <span>Equipos municipales intervienen calles y caminos para mejorar la circulación de las comunidades.</span>
-                </figcaption>
-              </figure>
-              <figure class="carousel-slide">
-                <img src="assets/img/rogelio-comunidad.webp" alt="Rogelio Nerón junto a vecinos y referentes comunitarios." />
-                <figcaption>
-                  <strong>Liderazgo con respaldo comunitario</strong>
-                  <span>Una gestión que nace del territorio y mantiene cercanía con vecinos, comunidades y referentes locales.</span>
-                </figcaption>
-              </figure>
-              <figure class="carousel-slide">
-                <img src="assets/img/gestion-02.jpeg" alt="Rogelio Nerón supervisando tareas de maquinaria en un camino afectado por barro." />
-                <figcaption>
-                  <strong>Supervisión en territorio</strong>
-                  <span>La gestión acompaña los trabajos de campo y sigue de cerca las necesidades de cada zona.</span>
-                </figcaption>
-              </figure>
-              <figure class="carousel-slide">
-                <img src="assets/img/gestion-03.jpeg" alt="Retroexcavadora realizando mejoras sobre una calle del municipio." />
-                <figcaption>
-                  <strong>Mejoramiento de calles</strong>
-                  <span>Maquinaria pesada al servicio del mantenimiento urbano y la conectividad vecinal.</span>
-                </figcaption>
-              </figure>
-              <figure class="carousel-slide">
-                <img src="assets/img/gestion-05.jpeg" alt="Maquinaria municipal estacionada y lista para tareas de obra pública." />
-                <figcaption>
-                  <strong>Herramientas para hacer gestión</strong>
-                  <span>Equipamiento municipal preparado para responder a obras, emergencias y mantenimiento.</span>
-                </figcaption>
-              </figure>
-              <figure class="carousel-slide">
-                <img src="assets/img/gestion-09.jpeg" alt="Rogelio Nerón recibiendo un reconocimiento institucional en un acto público." />
-                <figcaption>
-                  <strong>Representación institucional</strong>
-                  <span>Santa Victoria Este presente en espacios de gestión, articulación y reconocimiento público.</span>
-                </figcaption>
-              </figure>
-              <figure class="carousel-slide">
-                <img src="assets/img/gestion-11.jpeg" alt="Vecinos reunidos alrededor de colectivos y vehículos municipales." />
-                <figcaption>
-                  <strong>Acompañamiento comunitario</strong>
-                  <span>Presencia municipal junto a vecinos, familias y comunidades del territorio.</span>
-                </figcaption>
-              </figure>
-              <figure class="carousel-slide">
-                <img src="assets/img/gestion-15.jpeg" alt="Vehículos municipales estacionados en una plaza arbolada." />
-                <figcaption>
-                  <strong>Movilidad para llegar más lejos</strong>
-                  <span>Vehículos destinados a fortalecer la atención, el traslado y la presencia en los parajes.</span>
+                  <strong data-carousel-title>Trabajo en caminos rurales</strong>
+                  <span data-carousel-description>Equipos municipales intervienen calles y caminos para mejorar la circulación de las comunidades.</span>
                 </figcaption>
               </figure>
               <div class="carousel-controls" aria-label="Controles de galería">
-                <button type="button" data-carousel-prev aria-label="Imagen anterior">‹</button>
-                <button type="button" data-carousel-next aria-label="Imagen siguiente">›</button>
+                <button type="button" data-carousel-prev aria-label="Imagen anterior">&lsaquo;</button>
+                <button type="button" data-carousel-next aria-label="Imagen siguiente">&rsaquo;</button>
               </div>
               <div class="carousel-dots" data-carousel-dots aria-label="Indicadores de galería"></div>
             </div>
