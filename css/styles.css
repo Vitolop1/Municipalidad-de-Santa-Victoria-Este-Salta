@@ -21,6 +21,7 @@ html {
 body {
   font-family: "Alegreya Sans", system-ui, sans-serif !important;
   color: var(--ink);
+  font-size: 16px;
 }
 
 h1,
@@ -56,8 +57,54 @@ h3,
   font-weight: 800;
 }
 
+.site-header {
+  box-shadow: 0 10px 28px rgba(33, 26, 18, 0.06);
+}
+
+.brand-lockup {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-lockup img {
+  width: clamp(4.5rem, 7vw, 6.4rem);
+  height: clamp(4.5rem, 7vw, 6.4rem);
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.brand-text {
+  display: grid;
+  min-width: 0;
+  line-height: 1;
+}
+
+.brand-initials {
+  color: var(--deep);
+  font-family: "Literata", Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4.7rem);
+  font-weight: 800;
+}
+
+.brand-name {
+  margin-top: 0.15rem;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.55vw, 1.35rem);
+  font-weight: 900;
+}
+
+.brand-subtitle {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .nav-link {
   color: var(--ink);
+  font-size: 0.96rem;
   transition: color 160ms ease;
 }
 
@@ -101,7 +148,7 @@ h3,
 .hero-copy p:not(.eyebrow) {
   margin-top: 1.3rem;
   max-width: 42rem;
-  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  font-size: clamp(1.08rem, 1.8vw, 1.28rem);
   line-height: 1.55;
 }
 
@@ -285,8 +332,8 @@ h3,
   margin-top: 1rem;
   max-width: 44rem;
   color: var(--muted);
-  font-size: 1.18rem;
-  line-height: 1.7;
+  font-size: 1.04rem;
+  line-height: 1.68;
 }
 
 .story-section {
@@ -359,7 +406,7 @@ h3,
 .leadership-card p {
   margin-top: 0.65rem;
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 1rem;
   line-height: 1.55;
 }
 
@@ -396,7 +443,7 @@ h3,
 .milestone-grid p {
   margin-top: 0.55rem;
   color: var(--muted);
-  font-size: 1.02rem;
+  font-size: 0.97rem;
   line-height: 1.45;
 }
 
@@ -438,7 +485,7 @@ h3,
 
 .work-item p {
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 1rem;
   line-height: 1.55;
 }
 
@@ -534,7 +581,7 @@ h3,
 .contact-section p {
   max-width: 36rem;
   color: #ead7b7;
-  font-size: 1.15rem;
+  font-size: 1.04rem;
   line-height: 1.65;
 }
 
@@ -583,7 +630,7 @@ h3,
     position: absolute;
     left: 1rem;
     right: 1rem;
-    top: 5rem;
+    top: 6.75rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -596,6 +643,27 @@ h3,
 
   .hero-copy h1 {
     font-size: clamp(2.75rem, 18vw, 4.2rem);
+  }
+
+  .brand-lockup {
+    gap: 0.7rem;
+  }
+
+  .brand-lockup img {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+
+  .brand-initials {
+    font-size: 2.55rem;
+  }
+
+  .brand-name {
+    font-size: 0.98rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.82rem;
   }
 
   .story-text {
