@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TU_USUARIO.github.io/TU_REPOSITORIO/sitemap.xml
+Sitemap: https://vitolop1.github.io/Municipalidad-de-Santa-Victoria-Este-Salta/sitemap.xml

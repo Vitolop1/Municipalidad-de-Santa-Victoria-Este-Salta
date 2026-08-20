@@ -39,7 +39,7 @@ Abrir `index.html` directamente en el navegador o servir la carpeta con un servi
 
 ## Tareas pendientes
 
-- Reemplazar `TU_USUARIO` y `TU_REPOSITORIO` en `index.html`, `robots.txt` y `sitemap.xml`.
+- Verificar que la URL publicada de GitHub Pages coincida con la URL configurada en `index.html`, `robots.txt` y `sitemap.xml`.
 - Agregar imagenes reales en `assets/img`.
 - Agregar escudo y logos oficiales en `assets/logos`.
 - Agregar favicon en `assets/icons/favicon.ico`.
