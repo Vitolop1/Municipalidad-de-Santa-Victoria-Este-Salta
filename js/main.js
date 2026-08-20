@@ -51,7 +51,7 @@ if (carousel) {
       src: "assets/img/gestion-05.jpeg",
       alt: "Maquinaria municipal estacionada y lista para tareas de obra pública.",
       title: "Herramientas para hacer gestión",
-      description: "Equipamiento municipal preparado para responder a obras, emergencias y mantenimiento.",
+      description: "Equipamiento municipal al servicio de obras, emergencias y mantenimiento.",
     },
     {
       src: "assets/img/gestion-09.jpeg",
