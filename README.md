@@ -40,7 +40,8 @@ Abrir `index.html` directamente en el navegador o servir la carpeta con un servi
 ## Tareas pendientes
 
 - Verificar que la URL publicada de GitHub Pages coincida con la URL configurada en `index.html`, `robots.txt` y `sitemap.xml`.
-- Agregar imagenes reales en `assets/img`.
+- Agregar imagenes reales de gestion en `assets/img` usando nombres como `gestion-01.jpg`, `gestion-02.jpg`, `gestion-portada.jpg` y `poster-video-01.jpg`.
+- Agregar videos propios en `assets/videos` usando nombres como `gestion-01.mp4`.
 - Agregar escudo y logos oficiales en `assets/logos`.
 - Agregar favicon en `assets/icons/favicon.ico`.
 - Completar datos oficiales de contacto.

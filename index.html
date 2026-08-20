@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Municipalidad de Santa Victoria Este - Portal Oficial</title>
+    <title>Municipalidad de Santa Victoria Este - Gestión Rogelio Nerón</title>
     <meta
       name="description"
-      content="Portal oficial de la Municipalidad de Santa Victoria Este, Salta. Información institucional, servicios, comunidades, cultura local y canales de atención."
+      content="Portal de la Municipalidad de Santa Victoria Este, Salta. Obras, gestión municipal de Rogelio Nerón, comunidades, cultura local y atención al vecino."
     />
     <meta
       name="keywords"
-      content="Municipalidad de Santa Victoria Este, Santa Victoria Este Salta, Rivadavia, Pilcomayo, Hito Esmeralda, Cultura Nativa, comunidades originarias"
+      content="Municipalidad de Santa Victoria Este, Rogelio Nerón, Santa Victoria Este Salta, gestión municipal, Rivadavia, Pilcomayo, Cultura Nativa"
     />
     <meta name="author" content="Municipalidad de Santa Victoria Este" />
     <meta name="robots" content="index, follow" />
@@ -19,19 +19,22 @@
     <link rel="canonical" href="https://vitolop1.github.io/Municipalidad-de-Santa-Victoria-Este-Salta/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Municipalidad de Santa Victoria Este" />
-    <meta property="og:description" content="Portal institucional de Santa Victoria Este, corazón del Chaco salteño." />
+    <meta property="og:title" content="Municipalidad de Santa Victoria Este - Gestión Rogelio Nerón" />
+    <meta property="og:description" content="Obras, acciones y vida comunitaria de Santa Victoria Este, corazón del Chaco salteño." />
     <meta property="og:url" content="https://vitolop1.github.io/Municipalidad-de-Santa-Victoria-Este-Salta/" />
     <meta property="og:image" content="https://vitolop1.github.io/Municipalidad-de-Santa-Victoria-Este-Salta/assets/logos/logosve.png" />
 
     <link rel="icon" href="assets/icons/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&family=Literata:opsz,wght@7..72,600;7..72,700;7..72,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-stone-50 text-slate-900">
-    <div class="border-b border-slate-800 bg-slate-950 px-4 py-2 text-xs text-slate-300">
-      <div class="mx-auto flex max-w-6xl flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <span>Municipalidad de Santa Victoria Este - Departamento Rivadavia, Salta</span>
+  <body class="bg-[#f7f1e8] text-slate-950">
+    <div class="topbar px-4 py-2 text-sm">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <span>Santa Victoria Este - Departamento Rivadavia, Salta</span>
         <div class="flex gap-4">
           <a class="top-link" href="https://visitsalta.ar" target="_blank" rel="noopener">Turismo Salta</a>
           <a class="top-link" href="https://www.salta.gob.ar" target="_blank" rel="noopener">Gobierno de Salta</a>
@@ -39,174 +42,205 @@
       </div>
     </div>
 
-    <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3" aria-label="Navegación principal">
+    <header class="sticky top-0 z-40 border-b border-black/10 bg-[#f7f1e8]/95 backdrop-blur">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3" aria-label="Navegación principal">
         <a href="#" class="flex min-w-0 items-center gap-3 text-slate-950">
-          <img
-            src="assets/logos/logosve.png"
-            alt="Escudo de la Municipalidad de Santa Victoria Este"
-            class="h-14 w-14 shrink-0 object-contain"
-          />
+          <img src="assets/logos/logosve.png" alt="Escudo de la Municipalidad de Santa Victoria Este" class="h-14 w-14 shrink-0 object-contain" />
           <span class="min-w-0">
-            <span class="block text-base font-extrabold leading-tight sm:text-lg">Santa Victoria Este</span>
-            <span class="block text-xs font-medium text-slate-500">Trifinio Argentina - Bolivia - Paraguay</span>
+            <span class="block text-lg font-extrabold leading-tight">Santa Victoria Este</span>
+            <span class="block text-sm font-semibold text-[#80643b]">Gestión municipal</span>
           </span>
         </a>
-        <button
-          id="menu-toggle"
-          class="rounded border border-slate-300 px-3 py-2 text-sm font-semibold text-slate-700 md:hidden"
-          type="button"
-          aria-expanded="false"
-          aria-controls="main-menu"
-        >
+        <button id="menu-toggle" class="menu-button md:hidden" type="button" aria-expanded="false" aria-controls="main-menu">
           Menú
         </button>
-        <ul id="main-menu" class="hidden items-center gap-5 text-sm font-semibold md:flex">
-          <li><a class="nav-link" href="#municipio">Municipio</a></li>
-          <li><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li><a class="nav-link" href="#cultura">Cultura</a></li>
-          <li><a class="nav-link" href="#eventos">Eventos</a></li>
+        <ul id="main-menu" class="hidden items-center gap-5 text-base font-bold md:flex">
+          <li><a class="nav-link" href="#gestion">Gestión</a></li>
+          <li><a class="nav-link" href="#obras">Obras</a></li>
+          <li><a class="nav-link" href="#galeria">Galería</a></li>
+          <li><a class="nav-link" href="#videos">Videos</a></li>
           <li><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="hero text-white">
-        <div class="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:py-24 lg:grid-cols-[1fr_280px] lg:items-center">
-          <div>
-            <p class="mb-3 text-sm font-bold uppercase tracking-wide text-sky-100">Portal institucional y territorial</p>
-            <h1 class="max-w-4xl text-4xl font-extrabold leading-tight sm:text-5xl">
-              Municipalidad de Santa Victoria Este
-            </h1>
-            <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-100">
-              Corazón del Chaco salteño, a la vera del Río Pilcomayo. Un municipio multicultural de encuentro, tradición y desarrollo comunitario.
+      <section class="hero">
+        <div class="mx-auto grid min-h-[620px] max-w-7xl gap-10 px-4 py-10 lg:grid-cols-[1.05fr_.95fr] lg:items-center">
+          <div class="hero-copy">
+            <p class="eyebrow">Municipalidad de Santa Victoria Este</p>
+            <h1>Gestión presente en cada comunidad del Chaco salteño</h1>
+            <p>
+              Obras, acompañamiento territorial y acciones concretas para que la gestión de Rogelio Nerón se vea, se cuente y quede cerca de cada vecino.
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
-              <a class="btn-primary" href="#servicios">Ver servicios</a>
-              <a class="btn-secondary" href="#contacto">Atención al vecino</a>
+              <a class="btn-primary" href="#galeria">Ver gestión en imágenes</a>
+              <a class="btn-secondary" href="#videos">Ver videos</a>
             </div>
           </div>
-          <img
-            src="assets/logos/logosve.png"
-            alt="Escudo municipal de Santa Victoria Este"
-            class="mx-auto w-48 max-w-full lg:w-64"
-          />
-        </div>
-      </section>
 
-      <section id="municipio" class="mx-auto max-w-6xl px-4 py-14">
-        <p class="section-kicker">Información del municipio</p>
-        <h2 class="section-title">Ubicación estratégica e identidad local</h2>
-        <img
-          src="assets/logos/logointendente.png"
-          alt="Municipalidad de Santa Victoria Este - Intendencia Rogelio Nerón"
-          class="mt-6 max-h-24 w-full max-w-2xl object-contain object-left"
-        />
-        <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <article class="fact-card">
-            <span>Ubicación</span>
-            <strong>Río Pilcomayo / Hito Esmeralda</strong>
-          </article>
-          <article class="fact-card">
-            <span>Coordenadas</span>
-            <strong>22°16'30"S 62°42'50"O</strong>
-          </article>
-          <article class="fact-card">
-            <span>Fiesta patronal</span>
-            <strong>7 de octubre, Virgen de las Victorias</strong>
-          </article>
-          <article class="fact-card">
-            <span>Localidades y parajes</span>
-            <strong>Santa María, Misión La Paz, Pozo del Tigre y más</strong>
-          </article>
-        </div>
-      </section>
-
-      <section id="servicios" class="border-y border-slate-200 bg-white">
-        <div class="mx-auto max-w-6xl px-4 py-14">
-          <p class="section-kicker">Servicios</p>
-          <h2 class="section-title">Accesos principales</h2>
-          <div class="mt-8 grid gap-4 md:grid-cols-3">
-            <article class="service-card">
-              <h3>Trámites municipales</h3>
-              <p>Información para solicitudes, certificados, permisos y gestión administrativa.</p>
-            </article>
-            <article class="service-card">
-              <h3>Noticias y comunicados</h3>
-              <p>Novedades oficiales, actividades institucionales y avisos para vecinos y comunidades.</p>
-            </article>
-            <article class="service-card">
-              <h3>Atención ciudadana</h3>
-              <p>Canales de contacto para consultas, reclamos y orientación municipal.</p>
-            </article>
+          <div class="hero-media" aria-label="Identidad institucional">
+            <img src="assets/logos/logointendente.png" alt="Municipalidad de Santa Victoria Este - Intendencia Rogelio Nerón" />
+            <div class="media-card media-card-large">
+              <span>Imagen principal</span>
+              <strong>Obras, recorridas y presencia municipal</strong>
+            </div>
+            <!-- Reemplazar el bloque anterior por una foto real:
+            <img class="hero-photo" src="assets/img/gestion-portada.jpg" alt="Rogelio Nerón junto a vecinos de Santa Victoria Este" />
+            -->
           </div>
         </div>
       </section>
 
-      <section id="cultura" class="mx-auto max-w-6xl px-4 py-14">
-        <div class="grid gap-8 lg:grid-cols-[1.1fr_.9fr] lg:items-start">
+      <section id="gestion" class="story-section">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
           <div>
-            <p class="section-kicker">Cultura y comunidades</p>
-            <h2 class="section-title">Diversidad cultural y pueblos originarios</h2>
-            <p class="section-copy">
-              Santa Victoria Este posee una riqueza humana única. En su territorio conviven familias criollas y comunidades de pueblos originarios como Wichí, Chorote, Qom, Chulupí y Quechua.
-            </p>
-            <p class="section-copy">
-              Su ubicación en el extremo noreste salteño, cerca del punto tripartito entre Argentina, Bolivia y Paraguay, fortalece su rol como espacio de integración cultural y fronteriza.
-            </p>
+            <p class="eyebrow">La gestión</p>
+            <h2 class="section-title">Una página para mostrar lo que se hace en territorio</h2>
           </div>
-          <div class="highlight-panel">
-            <h3>Chaco salteño y Río Pilcomayo</h3>
+          <div class="story-text">
             <p>
-              Este bloque queda preparado para sumar fotografías propias, historia local, mapas, programas territoriales y materiales institucionales.
+              La web tiene que funcionar como una vidriera pública de la gestión: caminos, salud, deporte, cultura, asistencia a comunidades, entrega de herramientas, obras y presencia en los parajes.
+            </p>
+            <p>
+              Cada bloque está preparado para sumar fotos, videos, placas de campaña, comunicados y recorridas del intendente Rogelio Nerón sin que la página pierda orden.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="eventos" class="bg-amber-50">
-        <div class="mx-auto max-w-6xl px-4 py-14">
-          <div class="event-band">
-            <div class="event-mark" aria-hidden="true">★</div>
-            <div>
-              <p class="text-sm font-bold uppercase tracking-wide text-amber-800">Evento anual - Mayo</p>
-              <h2 class="mt-1 text-2xl font-extrabold text-amber-950">Fiesta de la Cultura Nativa</h2>
-              <p class="mt-3 max-w-3xl leading-7 text-slate-700">
-                Encuentro solidario y de integración cultural impulsado junto a la comunidad. Reúne música, salud, deporte y acciones para contribuir al bienestar de los habitantes locales.
-              </p>
-            </div>
+      <section id="obras" class="work-section">
+        <div class="mx-auto max-w-7xl px-4 py-16">
+          <div class="section-heading">
+            <p class="eyebrow">Obras y acciones</p>
+            <h2 class="section-title">Gestión que se ve</h2>
+          </div>
+          <div class="work-grid mt-10">
+            <article class="work-item featured">
+              <div class="media-card">
+                <span>Foto destacada</span>
+                <strong>Recorrida de obra</strong>
+              </div>
+              <h3>Obras para mejorar la vida diaria</h3>
+              <p>Espacio principal para publicar avances de infraestructura, caminos, servicios y tareas municipales.</p>
+            </article>
+            <article class="work-item">
+              <div class="media-card small">
+                <span>Foto</span>
+              </div>
+              <h3>Acompañamiento comunitario</h3>
+              <p>Acciones en barrios, parajes y comunidades originarias.</p>
+            </article>
+            <article class="work-item">
+              <div class="media-card small">
+                <span>Foto</span>
+              </div>
+              <h3>Deporte y cultura</h3>
+              <p>Actividades para jóvenes, familias e instituciones locales.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="clima" class="mx-auto max-w-6xl px-4 py-14">
-        <p class="section-kicker">Territorio</p>
-        <h2 class="section-title">Datos climáticos de referencia</h2>
-        <div class="mt-8 grid gap-4 md:grid-cols-3">
-          <article class="climate-card">
-            <strong class="text-amber-600">46,4 °C</strong>
-            <span>Máxima récord</span>
-          </article>
-          <article class="climate-card">
-            <strong class="text-sky-700">24,0 °C</strong>
-            <span>Media anual</span>
-          </article>
-          <article class="climate-card">
-            <strong class="text-emerald-700">674,7 mm</strong>
-            <span>Lluvia anual</span>
-          </article>
+      <section id="galeria" class="gallery-section">
+        <div class="mx-auto max-w-7xl px-4 py-16">
+          <div class="section-heading">
+            <p class="eyebrow">Galería de gestión</p>
+            <h2 class="section-title">Imágenes para contar el trabajo municipal</h2>
+          </div>
+          <div class="gallery-grid mt-10">
+            <figure class="gallery-tile tall">
+              <div class="media-card"><span>assets/img/gestion-01.jpg</span></div>
+              <figcaption>Rogelio Nerón junto a vecinos</figcaption>
+            </figure>
+            <figure class="gallery-tile">
+              <div class="media-card"><span>assets/img/gestion-02.jpg</span></div>
+              <figcaption>Entrega de herramientas</figcaption>
+            </figure>
+            <figure class="gallery-tile">
+              <div class="media-card"><span>assets/img/gestion-03.jpg</span></div>
+              <figcaption>Obras y servicios</figcaption>
+            </figure>
+            <figure class="gallery-tile wide">
+              <div class="media-card"><span>assets/img/gestion-04.jpg</span></div>
+              <figcaption>Trabajo territorial en comunidades</figcaption>
+            </figure>
+          </div>
+          <!-- Para usar fotos reales, reemplazar cada .media-card por:
+          <img src="assets/img/gestion-01.jpg" alt="Descripción concreta de la foto" />
+          -->
         </div>
       </section>
 
-      <section id="contacto" class="bg-slate-950 text-white">
-        <div class="mx-auto grid max-w-6xl gap-8 px-4 py-14 md:grid-cols-2">
+      <section id="videos" class="video-section">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 lg:grid-cols-[.85fr_1.15fr] lg:items-start">
           <div>
-            <p class="text-sm font-bold uppercase tracking-wide text-sky-200">Contacto</p>
-            <h2 class="mt-2 text-3xl font-extrabold">Atención al vecino</h2>
-            <p class="mt-4 text-slate-300">
-              Canales institucionales para consultas, trámites, reclamos y orientación municipal.
+            <p class="eyebrow">Videos</p>
+            <h2 class="section-title">La palabra y la presencia de la gestión</h2>
+            <p class="section-copy">
+              Bloques pensados para discursos, recorridas, resúmenes de obras, actos, entrevistas y piezas cortas para redes sociales.
             </p>
+          </div>
+          <div class="video-grid">
+            <article class="video-card main-video">
+              <div class="video-placeholder">
+                <span>Video principal</span>
+              </div>
+              <h3>Resumen de gestión</h3>
+            </article>
+            <article class="video-card">
+              <div class="video-placeholder">
+                <span>Reel / acto</span>
+              </div>
+              <h3>Recorridas territoriales</h3>
+            </article>
+            <article class="video-card">
+              <div class="video-placeholder">
+                <span>Reel / obra</span>
+              </div>
+              <h3>Avances de obras</h3>
+            </article>
+          </div>
+          <!-- Para videos propios:
+          <video controls poster="assets/img/poster-video-01.jpg">
+            <source src="assets/videos/gestion-01.mp4" type="video/mp4" />
+          </video>
+          -->
+        </div>
+      </section>
+
+      <section id="territorio" class="territory-section">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-16 lg:grid-cols-[1fr_1fr]">
+          <div>
+            <p class="eyebrow">Territorio y cultura</p>
+            <h2 class="section-title">Santa Victoria Este, identidad viva del norte salteño</h2>
+            <p class="section-copy">
+              A la vera del Río Pilcomayo, el municipio reúne familias criollas y comunidades Wichí, Chorote, Qom, Chulupí y Quechua. La página mantiene ese espíritu: cálido, territorial y cercano.
+            </p>
+          </div>
+          <div class="fact-list">
+            <article>
+              <span>Fiesta patronal</span>
+              <strong>7 de octubre, Virgen de las Victorias</strong>
+            </article>
+            <article>
+              <span>Fiesta de la Cultura Nativa</span>
+              <strong>Encuentro anual de integración cultural</strong>
+            </article>
+            <article>
+              <span>Localidades y parajes</span>
+              <strong>Santa María, Misión La Paz, Pozo del Tigre y más</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact-section">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-16 md:grid-cols-2">
+          <div>
+            <p class="eyebrow light">Contacto</p>
+            <h2 class="section-title light">Atención al vecino</h2>
+            <p>Canales institucionales para consultas, trámites, reclamos y orientación municipal.</p>
           </div>
           <address class="contact-box not-italic">
             <p><strong>Sede municipal:</strong> San Martín s/n, Santa Victoria Este</p>
@@ -218,10 +252,9 @@
       </section>
     </main>
 
-    <footer class="bg-slate-950 px-4 py-6 text-center text-sm text-slate-400">
-      <p class="font-semibold text-white">Municipalidad de Santa Victoria Este</p>
-      <p class="mt-1">Provincia de Salta - República Argentina</p>
-      <p class="mt-1">&copy; <span id="current-year"></span> Todos los derechos reservados.</p>
+    <footer class="footer px-4 py-7 text-center">
+      <p>Municipalidad de Santa Victoria Este</p>
+      <span>Provincia de Salta - República Argentina - <span id="current-year"></span></span>
     </footer>
 
     <script src="js/main.js"></script>
