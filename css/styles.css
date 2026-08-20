@@ -66,6 +66,7 @@ h3,
   min-width: 0;
   align-items: center;
   gap: 1rem;
+  text-decoration: none;
 }
 
 .brand-lockup img {
@@ -78,28 +79,33 @@ h3,
 .brand-text {
   display: grid;
   min-width: 0;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.7rem;
+  align-items: center;
   line-height: 1;
 }
 
 .brand-initials {
+  grid-row: span 2;
   color: var(--deep);
   font-family: "Literata", Georgia, serif;
   font-size: clamp(2.5rem, 5vw, 4.7rem);
   font-weight: 800;
+  line-height: 0.9;
 }
 
 .brand-name {
-  margin-top: 0.15rem;
   color: var(--ink);
   font-size: clamp(1rem, 1.55vw, 1.35rem);
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .brand-subtitle {
-  margin-top: 0.25rem;
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .nav-link {
@@ -654,16 +660,20 @@ h3,
     height: 4.25rem;
   }
 
+  .brand-text {
+    column-gap: 0.5rem;
+  }
+
   .brand-initials {
     font-size: 2.55rem;
   }
 
   .brand-name {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
   }
 
   .brand-subtitle {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
   }
 
   .story-text {
